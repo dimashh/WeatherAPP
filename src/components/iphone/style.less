@@ -1,0 +1,110 @@
+@import '~style/helpers';
+
+.container {
+	display: flex;
+	flex-direction: column;
+	background-image: url('../../assets/backgrounds/camo.jpg');
+	color: #fff;
+	width: 414px;
+	height: 736px;
+	/*text-align: center; commented out coz was preventing correct posisioning of interface elements in our design */
+	// padding-top: 40px; //uncomment for title bar
+	margin: 0 auto;
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.details {
+	flex: 4;
+}
+.top{
+	margin-left: 20px;
+}
+.city {
+	flex: 1;
+	font-size: 1.7em;
+	font-weight: 400;
+}
+
+.conditions {
+	flex: 1;
+	font-size: 1em;
+}
+
+.temperature {
+	flex: 2;
+	margin-top: 0;
+	font-size: 4.3em;
+	font-weight: 300;
+	letter-spacing: -12px;
+}
+
+.filled:after {
+	content: "°";
+	margin: 0 0 0 1rem;
+	font-size: 0.5em;
+	font-weight: 100;
+	display: inline-block;
+	padding-top: 10px;
+	vertical-align: top;
+}
+
+.cond {
+	font-size: 2em;
+	font-weight: 300;
+}
+
+#equ_rec_title {
+	position: relative;
+	// top: -10px;
+	left: 10px;
+	font-size: 20px;
+}
+
+#transparent_box {
+	position: absolute;
+	top: 566px;
+	height: 170px;
+	width: 414px;
+	background-color: #ffffff;
+	opacity: 0.6;
+}
+table{
+	 width: 95%;
+	 border-spacing: 25px;
+	 text-align: center;
+	 table-layout: fixed;
+
+}
+
+th, td {
+	height: 85px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background: red;
+	display: inline-block;
+}
+/*The Content*/
+.scroll-me {
+  /*min-width: 750px;
+	width: 750px;
+	max-width: 750px;*/
+
+}
+
+#test_img {
+	/*width: 160px;*/
+	height: 160px;
+	padding: 10px;
+}
+#advice_img{
+	height: 20px;
+	padding:1px;
+}
